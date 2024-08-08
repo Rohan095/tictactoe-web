@@ -1,0 +1,6 @@
+Clone or download the project files to your local machine.
+Open the index.html file in any modern web browser.
+Enter the names of both players and click "Play" to start the game.
+Players take turns clicking on the grid to place their mark. The game automatically detects a win or a tie.
+Use the "Re-Match" button to play another round with the same players or the "New Game" button to start over with new names.
+If you need to clear the input fields before starting, use the "Reset" button.
