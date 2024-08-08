@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tic Tac</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js">
+</script>
+</head>
+<body align="center">
+	<div id="open">
+		<h1>TIC TAC TOE</h1>
+		Enter First Player(O)<br>
+		<input type="text" id="first"><br>
+		Enter Second Player(X)<br>
+		<input type="text" id="second"><br>
+		<button id="reset">Reset</button><br>
+		<button id="play">PLAY</button>
+	</div>
+	<div class="container" align="center">
+		<h2 id="heading"></h2>
+		<div class="game" align="center">	
+			<button class="box" ></button>
+			<button class="box" ></button>
+			<button class="box" ></button>
+			<button class="box" ></button>
+			<button class="box" ></button>
+			<button class="box" ></button>
+			<button class="box" ></button>
+			<button class="box" ></button>
+			<button class="box" ></button>
+		</div>
+		<h2 id="win_count"></h2><hr>
+		<br>
+		<button id="rematch">Re-Match</button>
+		<button id="new">New Game</button>
+		<br>
+	</div>
+</body>
+<script src="script.js"></script>
+</html>

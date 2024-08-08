@@ -1,0 +1,167 @@
+body {
+    background-image: url("toe1.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono');
+#heading{
+    position: relative;
+    top: 10px;
+    font-family: "Nova Mono", monospace;
+    text-align: center;
+    font-size: 3.5rem;
+    color: #1E1F1F;
+    text-shadow: 0 0 3px ghostwhite;
+    background-color: #AEB096;
+    padding: 5px;
+    border-radius: 50px;
+}
+#win_count{
+    font-family: "Nova Mono", monospace;
+    text-align: center;
+    font-size: 2rem;
+    color: #1E1F1F;
+    text-shadow: 0 0 3px ghostwhite;
+    background-color: #AEB096;
+    border-radius: 30px;
+}
+#open{
+    background-image: linear-gradient(rgba(47, 79, 79, 0.9),rgba(47, 79, 79, 0.8)),url(toe.jpg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 900px;
+    color: #D8D4D5;
+    font-size: 4rem;
+    text-shadow: 0 0 15px #ACAD94;
+    font-family: "Times New Roman", monospace;
+}
+input{
+    width: 250px;
+    height: 40px;
+    font-size: 38px;
+    background-color: #C9CAB9;
+    color: #5A5E5D;
+    box-shadow: 5px 5px 10px black;
+    border: none;
+    border-radius: 10px;
+    font-family: "Times New Roman", monospace;
+    transition: transform 1s;
+}
+input:hover{
+    transform: scale(1.05);
+}
+#play{
+    padding: 20px;
+    width: 120px;
+    font-size: 30px;
+    background-color: #AEB096;
+    color: #1E1F1F ;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+    padding: 10px;
+    transition: background-color 1s, text-shadow 1s, transform 1s ,width 1s, border-radius 1s;
+    transition-timing-function: ease-in-out;
+}
+#play:hover{
+    background-color: #C9CAB9;
+    text-shadow: 0 0 2px black;
+    transform: translateX(10px);
+    width: 140px;
+    border-radius: 100px 200px 200px 100px ;
+}
+#reset{
+    padding: 20px;
+    width: 120px;
+    font-size: 30px;
+    background-color: #AEB096;
+    color: #1E1F1F ;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+    padding: 10px;
+    transition: background-color 1s, text-shadow 1s,transform 1s, border-radius 1s;
+    transition-timing-function: ease-in-out;
+}
+#reset:hover{
+    background-color: #C9CAB9;
+    text-shadow: 0 0 2px black;
+    transform: translateY(-5px);
+    border-radius: 200px 200px 50px 50px;
+}
+#new, #rematch{
+    color: dimgrey;
+    font-size: 25px;
+    background-color: #D8D4D5;
+    border-radius: 20px;
+    padding: 15px 30px;
+    border: none;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, text-shadow 0.2s, color 0.2s;
+}
+
+#new:hover, #rematch:hover{
+    transform: translateY(-3px);
+    background-color:#9A9A84;
+    color: #1E1F1F;
+    text-shadow: 0 0 3px ghostwhite;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(rgba(47, 79, 79, 0.7),rgba(47, 79, 79, 0.8));
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000;
+    width: 50vw; 
+}
+.game {
+    background-color: dimgray;
+    height: 62.5vh;
+    width: 38vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow:0 0 15px #000;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #E2E2E2 ;
+    color: dimgrey;
+    font-size: 9rem;
+    height: 20vh;
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid dimgrey;
+    text-shadow: 5px 5px 10px black;
+}
+.box:disabled:hover {
+  cursor: not-allowed;
+  transform: scale(1);
+  opacity: 1;
+}
+.box:disabled{
+    background-color: #D8D4D5 ;
+}
+.box:hover {
+    transform: scale(.98);
+    opacity: 0.3;
+}
